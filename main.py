@@ -1,12 +1,13 @@
-"""Intentionally invalid Ruff example for the assignment."""
+"""Small NumPy example used by the DSC 190 assignment."""
 
-import os, sys
 import numpy as np
-import numpy as np
-from pathlib import Path
 
-def main():
-    unused = Path("unused")
+
+def main() -> None:
+    """Print the sum of a small NumPy array."""
     values = np.array([1, 2, 3])
-    print( values.sum() )
-    os.getcwd()
+    print(values.sum())
+
+
+if __name__ == "__main__":
+    main()
